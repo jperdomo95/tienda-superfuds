@@ -6,9 +6,7 @@ const ShopCartProductDetail = ({ product, removeFromCart }) => {
 
   let [price, setPrice] = useState(product.price_real)
 
-  const handleChangeAmount = amount => amount
-    ? setPrice(amount * product.price_real)
-    : removeFromCart(product)
+  const handleChangeAmount = amount => setPrice(amount * product.price_real)
 
   return (
     <div className="row mb-3">

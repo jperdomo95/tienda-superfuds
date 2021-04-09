@@ -19,7 +19,7 @@ class ProductsList extends Component {
     this.getProduct()
   }
 
-  componentDidUpdate () {    
+  componentDidUpdate () {
     this.addZindexToCarouselItems()
   }
 
@@ -42,7 +42,7 @@ class ProductsList extends Component {
     }
   }
 
-  addZindexToCarouselItems () {    
+  addZindexToCarouselItems () {
     const el = document.getElementsByClassName('owl-item')
     for (let i = 0; i < el.length; i++) el[i].style.zIndex = `-${i}`
   }

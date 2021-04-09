@@ -2,7 +2,7 @@
 ## ¿Cómo utilizar este proyecto?
 Es sencillo, primero clona este repositorio a tu pc
 ```bash
-$ git clone https://github.com/jperdomo95/torre-backend.git
+$ git clone https://github.com/jperdomo95/tienda-superfuds.git
 ```
 ### Instalar dependencias
 Puedes instalar dependencias con npm

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+*
+ font-family: 'Poppins', sans-serif
+.cursor-pointer
+  cursor: pointer
+  
+$step: 0.05
+@for $i from 1 through 10
+	.transition-#{$i}
+		transition: #{$step}s !important
+		-webkit-transition: #{$step}s !important
+	.grow-#{$i}
+		transition: .35s !important
+		&-focus
+			&:focus
+				transform: scaleX(1+$step)
+		&:hover
+			transform: scale(1+$step)
+	$step: $step + 0.05

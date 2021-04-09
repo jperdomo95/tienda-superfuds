@@ -1,0 +1,27 @@
+@import '../../styles/_variables'
+  
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next
+  font-size: 2rem
+  position: absolute
+  display: block
+  z-index: 3
+  top: 160px
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  color: $green!important
+  display: flex
+  justify-content: center
+  align-items: center
+.owl-carousel .owl-nav .owl-prev
+  left: -40px
+  &::after
+    content: '<'
+.owl-carousel .owl-nav .owl-next
+  right: -40px
+  &::after
+    content: '>'
+.owl-stage-outer
+	@media screen and ( min-width: 1024px )
+  overflow: visible!important

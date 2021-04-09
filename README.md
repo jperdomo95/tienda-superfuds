@@ -10,6 +10,7 @@ Puedes instalar dependencias con npm
 $ npm install
 ```
 O yarn según gustes
+```
 $ yarn
 ```
 ### Iniciar servidor de desarrollo
